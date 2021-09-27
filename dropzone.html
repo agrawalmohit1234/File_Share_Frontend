@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <body>
+      <div class="drop-zone" style="border-color: #de4031">
+        <div>
+          <button class="button" id="button1" draggable="true">
+            Miscommunication & Misinterpretation
+          </button>
+          <button class="button" id="button2" draggable="true">
+            Communication Delays
+          </button>
+          <button class="button" id="button3" draggable="true">
+            Scattered Work and Content
+          </button>
+          <button class="button" id="button4" draggable="true">
+            Sharing Work with Others
+          </button>
+          <button class="button" id="button5" draggable="true">
+            Getting Feedback and Ideas
+          </button>
+        </div>
+      </div>
+      <div class="drop-zone" style="border-color: #31cfde"></div>
+    </body>
+    <script>
+      const draggableElement = document.querySelector("#button1");
+      draggableElement.addEventListener("dragstart", (e) => {
+        e.dataTransfer.setData("text/plain", draggableElement.id);
+      });
+      for (const dropZone of document.querySelectorAll(".drop-zone")) {
+        //when draggable element is over a dz
+        dropZone.addEventListener("dragover", (e) => {
+          e.preventDefault();
+          dropZone.classList.add("drop-zone--over");
+        });
+        //when draggable element no longer over dz
+        dropZone.addEventListener("dragLeave", (e) => {
+          dropZone.classList.remove("drop-zone--over");
+        });
+        //when draggable element is dropped onto dz
+        dropZone.addEventListener("drop", (e) => {
+          e.preventDefault();
+          const droppedElementId = e.dataTransfer.getData("text/plain");
+          const droppedElement = document.getElementById(droppedElementId);
+          dropZone.appendChild(droppedElement);
+          dropZone.classList.remove("drop-zone--over");
+        });
+      }
+    </script>
+  </head>
+</html>
