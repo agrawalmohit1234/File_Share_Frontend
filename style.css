@@ -177,22 +177,22 @@ body,
 .sharing-container .input-container input {
   width: 100%;
   border-radius: 3px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 20px;
   border: 2px dashed var(--border-color);
   border-radius: 6px;
-  background: #ff0833;
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
 }
 
 .sharing-container img {
   height: 22px;
   width: 30px;
   position: absolute;
-  right: 7px;
+  right: 12px;
   top: 12px;
   cursor: pointer;
-  background: #ff0833;
+  background: #ffffff;
 }
 
 .email-container form {
