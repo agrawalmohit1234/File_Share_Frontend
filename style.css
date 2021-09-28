@@ -181,8 +181,8 @@ body,
   font-size: 20px;
   border: 2px dashed var(--border-color);
   border-radius: 6px;
-  background: #f5fcff;
-  color: #607d8b;
+  background: #ff0833;
+  color: #ffffff;
 }
 
 .sharing-container img {
@@ -192,7 +192,7 @@ body,
   right: 7px;
   top: 12px;
   cursor: pointer;
-  background: #f5fcff;
+  background: #ff0833;
 }
 
 .email-container form {
@@ -242,7 +242,7 @@ body,
   background: var(--main-bg-color);
   border: none;
   border-radius: 5px;
-  color: #607d8b;
+  color: #ffffff;
   cursor: pointer;
 }
 
