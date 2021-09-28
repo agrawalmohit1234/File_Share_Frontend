@@ -1,6 +1,6 @@
 :root {
-  --main-bg-color: #edf5fe;
-  --light-blue: #03a9f4;
+  --main-bg-color: #ff647f;
+  --light-pink: #ffc0cb;
   --border-color: #0288d147;
   --container-width: 500px;
 }
@@ -252,7 +252,7 @@ body,
   right: 50%;
   transform: translate(50%, 60px);
   padding: 10px 20px;
-  background: var(--light-blue);
+  background: var(--light-pink);
   color: #fff;
   border-radius: 5px;
   font-size: 18px;
