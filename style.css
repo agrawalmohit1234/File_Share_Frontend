@@ -177,7 +177,7 @@ body,
 .sharing-container .input-container input {
   width: 100%;
   border-radius: 3px;
-  padding: 10px 20px;
+  padding: 10px 25px;
   font-size: 20px;
   border: 2px dashed var(--border-color);
   border-radius: 6px;
@@ -189,7 +189,7 @@ body,
   height: 22px;
   width: 30px;
   position: absolute;
-  right: 12px;
+  right: 16px;
   top: 12px;
   cursor: pointer;
   background: #ffffff;
